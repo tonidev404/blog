@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color: #ececec;
+}
+/* Estilos relativos al header */
+.header{
+    background-color: #0e0e0e;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Estilos relativos al título del header */
+.title{
+    margin-left: 7px;
+    text-transform: uppercase;
+    color: #ececec;
+}
+/* Estilos relativos al nav del header */
+.nav-header{
+    margin-right: 7px;
+}
+.ul-nav{
+    display: flex;
+    list-style: none;
+}   
+/* Estilos relativos a los botones de navegación */
+.inicio,
+.blogs,
+.faq,
+.contactar{
+    border: 2px solid #660e99;
+    border-radius: 25px;
+    padding: 8px;
+    margin: 6px;
+    text-decoration: none;
+    color: #ececec;
+    font-size: 1vw;
+    transition: .3s ease;
+}
+.inicio:hover,
+.blogs:hover,
+.faq:hover,
+.contactar:hover{
+    font-size: 1.05vw;
+    background-color: #660e99;
+}
+/* Estilos relativos al contenido de la página */
+.bienvenida{
+    box-sizing: border-box;
+    width: 100%;
+    height: 10vw;
+    background-color: #660e99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-bienvenida{
+    font-family: sans-serif;
+    font-size: 3vw;
+    color: #ececec;
+    -webkit-text-stroke: 2px #0e0e0e;
+}
+.flecha{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 33%;
+    transform: rotate(45deg);
+    background-color: #660e99;
+}
+.relevante{
+    box-sizing: border-box;
+    height: 20vw;
+    background-color: #0e0e0e;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title-relevante{
+    font-size: 2vw;
+    margin: 25px 0px;
+    color: #ececec;
+}
+.contenido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    
+}
+.contenido>*{
+    width: 100%;
+    color: white;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.apser.es%2Fwp-content%2Fuploads%2F2015%2F04%2FiStock_000041562536_XXXLarge.jpg&f=1&nofb=1&ipt=7e4d4ad068b03171c8a4b020e1473014936335c40f0541d8d151d98bb743e89f&ipo=images);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-title{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #660e99;
+    opacity: 0%;
+    transition: .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-title:hover{
+    opacity: 80%;
+    background: rgb(45,45,45);
+background: linear-gradient(0deg, rgba(45,45,45,1) 0%, rgba(127,127,130,1) 60%, rgba(236,236,236,1) 100%);
+}
